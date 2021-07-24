@@ -6,8 +6,8 @@ export function Header() {
       <div className={styles.title}>
         <h1>then & onwards</h1>
       </div>
-      <div className={styles.credit}>
-        by yasmin
+      <div className={styles.byline}>
+        by yasmin pessoa
       </div>
     </header>
   );

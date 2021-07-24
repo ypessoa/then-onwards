@@ -4,13 +4,21 @@ header.main {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: calc(100% - 4em);
 
   div {
-    flex: 50%;
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
-  .credit {
-      font-size: $medium;
+  .title {
+    // h1 {
+    //   font-weight: normal;
+    // }
+  }
+
+  .byline {
+    font-size: $medium;
   }
 }

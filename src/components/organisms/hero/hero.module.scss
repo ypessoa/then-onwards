@@ -1,0 +1,23 @@
+@import "../../../styles/vars.scss";
+
+section.hero {
+    height:calc(100vh - 3em);
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 4em;
+
+    .arrow, .deck {
+        flex-basis: 50%;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .arrow {
+        font-size: $large;
+    }
+
+    .deck {
+        font-size: $large;
+        font-family: $sans-serif;
+    }
+}
