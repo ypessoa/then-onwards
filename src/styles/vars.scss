@@ -1,12 +1,19 @@
 // fonts
-$mono: "Space Mono", monospace;
+$monospace: "Space Mono", monospace;
 $sans-serif: "Space Grotesk", sans-serif;
 
 // font sizes
 
-$regular: ;
-$medium: ;
-$big: ;
+$regular: 1em;
+$medium: 2em;
+$big: 2.5em;
+
+// grid 
+
+$col-1: 25%;
+$col-2: 50%;
+$col-3: 75%;
+$col-4: 100%;
 
 // colors
 
