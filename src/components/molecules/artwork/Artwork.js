@@ -1,10 +1,10 @@
 import styles from "./artwork.module.scss";
 
 export function Artwork({ artworkData, items, handleItems }) {
-  console.log(artworkData);
+  console.log(items.length);
 
   return (
-    <figure className={styles.artwork}>
+    <figure className={styles.artwork} style={{filter: `grayscale(${100 - items.length * 20}%)`}}>
       <img src={artworkData.image} alt="description" />
       <div className={styles["hitbox-wrapper"]}>
         {artworkData.areas.map((area, i) => (

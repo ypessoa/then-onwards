@@ -1,5 +1,5 @@
 import styles from "./scene-section.module.scss";
-import { Artwork } from "../../molecules/header/artwork/Artwork";
+import { Artwork } from "../../molecules/artwork/Artwork";
 import { data } from "../../../data";
 import { useState } from "react";
 

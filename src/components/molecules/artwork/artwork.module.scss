@@ -1,8 +1,9 @@
 figure.artwork {
   height: 100em;
-  max-height: calc(100vh - 8em);
+  max-height: calc(100vh - 2em);
   position: relative;
   cursor: crosshair;
+  transition: filter .25s ease;
 
   img {
     pointer-events: none;
@@ -41,7 +42,7 @@ figure.artwork {
       top: 0;
       left: 0;
       width: 100%;
-      transition: opacity 0.25s ease;
+    //   transition: opacity 0.25s ease;
     }
   }
 }
