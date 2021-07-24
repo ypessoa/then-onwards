@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.arrow}>↓</div>
-      <div className={styles.deck}>a pair of interactive images.</div>
+      <div className={styles.deck}>a pair of <br />interactive images.</div>
     </section>
   );
 }
