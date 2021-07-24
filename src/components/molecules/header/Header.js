@@ -7,7 +7,7 @@ export function Header() {
         <h1>then</h1>
       </div>
       <div className={styles.byline}>
-       onwards
+       <h1>onwards</h1>
       </div>
     </header>
   );

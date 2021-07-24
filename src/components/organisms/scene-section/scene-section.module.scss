@@ -3,17 +3,25 @@
 section.scene {
   display: flex;
   width: 100%;
-  background: $black;
-  color: $white;
+  justify-content: space-between;
   align-items: flex-start;
 
+  &.then {
+    background: $black;
+    color: $white;
+  }
+
+  &.onwards {
+    flex-direction: row-reverse;
+  }
+
   .text-content {
-    flex-basis: 50%;
+    flex-basis: calc(50% - 1em);
     flex-grow: 0;
   }
 
   .artwork-wrapper {
     margin-top: -1.5em;
-    width: 50%;
+    width: calc(50% - 1em);
   }
 }

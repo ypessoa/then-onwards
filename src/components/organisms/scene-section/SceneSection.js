@@ -2,6 +2,7 @@ import styles from "./scene-section.module.scss";
 import { Artwork } from "../../molecules/artwork/Artwork";
 import { data } from "../../../data";
 import { useState } from "react";
+import { VerseGrid } from "../../molecules/verse-grid/VerseGrid";
 
 export function SceneSection({ kind }) {
   const [items, setItems] = useState([]);
@@ -15,10 +16,16 @@ export function SceneSection({ kind }) {
   }
 
   return (
-    <section className={styles.scene}>
-      <div className={styles["text-content"]}>text-content</div>
+    <section className={`${styles.scene} ${styles[kind]}`}>
+      <div className={styles["text-content"]}>
+        <VerseGrid textData={data[kind]} />
+      </div>
       <div className={styles["artwork-wrapper"]}>
-        <Artwork  items={items} handleItems={handleItems} artworkData={data[kind]} />
+        <Artwork
+          items={items}
+          handleItems={handleItems}
+          artworkData={data[kind]}
+        />
       </div>
     </section>
   );
