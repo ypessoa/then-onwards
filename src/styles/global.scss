@@ -2,6 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono&display=swap");
 @import "./vars.scss";
 
+
+
+html, body {
+  overflow-y:hidden;
+  height:100vh;
+}
+
 body {
   font-family: $monospace;
   margin: 0;
@@ -9,6 +16,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $white;
+
 }
 
 h1,
@@ -23,4 +31,5 @@ h1 {
 section {
   padding: 1.5em 2em;
   min-height: 100vh;
+  scroll-snap-align: start;
 }

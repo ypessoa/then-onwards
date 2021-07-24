@@ -1,3 +1,5 @@
 .wrapper {
-    // padding:1.5em 2em;
+    scroll-snap-type: y proximity;
+    overflow: scroll;
+    height: 100vh;
 }
