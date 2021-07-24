@@ -1,24 +1,17 @@
 import "./styles/global.scss";
-import { Layout } from "./components/templates/Layout";
+import { Layout } from "./components/templates/layout/Layout";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <Layout>
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="description" content="a pair of interactive images" />
+        <meta name="author" content="Yasmin Pessoa" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
+      text here.
     </Layout>
   );
 }
