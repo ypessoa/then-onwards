@@ -8,7 +8,8 @@ export function Layout({ children }) {
     <div className={styles.wrapper}>
       <Header />
       <HeroSection />
-      <SceneSection />
+      <SceneSection kind="then"/>
+      <SceneSection kind="onwards"/>
       {children}
     </div>
   );

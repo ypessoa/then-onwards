@@ -1,3 +1,19 @@
+@import "../../../styles/vars.scss";
+
 section.scene {
   display: flex;
+  width: 100%;
+  background: $black;
+  color: $white;
+  align-items: flex-start;
+
+  .text-content {
+    flex-basis: 50%;
+    flex-grow: 0;
+  }
+
+  .artwork-wrapper {
+    margin-top: -1.5em;
+    width: auto;
+  }
 }
