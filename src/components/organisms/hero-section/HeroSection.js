@@ -1,6 +1,6 @@
-import styles from "./hero.module.scss";
+import styles from "./hero-section.module.scss";
 
-export function Hero() {
+export function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className={styles.arrow}>↓</div>
