@@ -1,0 +1,16 @@
+@import "../../../styles/vars.scss";
+
+header.main {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  div {
+    flex: 50%;
+  }
+
+  .credit {
+      font-size: $medium;
+  }
+}

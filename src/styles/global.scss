@@ -6,11 +6,16 @@
 body {
     font-family: $monospace;
     margin: 0;
+    font-size: 18px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: $white;
 }
 
-h1 {
+h1, h2 {
     font-family: $sans-serif;
+}
+
+h1 {
+    font-size: $medium;
 }
