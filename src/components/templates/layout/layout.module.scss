@@ -1,5 +1,5 @@
 .wrapper {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     overflow: scroll;
     height: 100vh;
 }
