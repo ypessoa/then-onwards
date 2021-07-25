@@ -3,19 +3,20 @@ $monospace: "Space Mono", monospace;
 $sans-serif: "Space Grotesk", sans-serif;
 
 // font sizes
-
-$regular: 1em;
+$small: 0.75em;
 $medium: 2em;
 $large: 4em;
 
-// grid 
-
+// grid
 $col-1: 25%;
 $col-2: 50%;
 $col-3: 75%;
 $col-4: 100%;
 
 // colors
-
-$white: #F1F5F0;
+$white: #f1f5f0;
 $black: #222323;
+
+// breakpoints
+$tablet-breakpoint: 80em;
+$mobile-breakpoint: 55em;

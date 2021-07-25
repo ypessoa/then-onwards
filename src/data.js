@@ -2,7 +2,7 @@ export const data = {
   then: {
     description: "interact with the scene.",
     image: "/images/then/then-pre.jpg",
-    texts: [
+    verses: [
       {
         swatch: "#934872",
         text: <>a countdown outside</>,
@@ -95,7 +95,7 @@ export const data = {
   onwards: {
     description: "interact with the scene.",
     image: "/images/onwards/onwards-pre.jpg",
-    texts: [
+    verses: [
       {
         swatch: "#77876C",
         text: (

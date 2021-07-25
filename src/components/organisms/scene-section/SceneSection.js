@@ -18,13 +18,18 @@ export function SceneSection({ kind }) {
   return (
     <section className={`${styles.scene} ${styles[kind]}`}>
       <div className={styles["text-content"]}>
-        <VerseGrid textData={data[kind]} />
+        <VerseGrid
+          items={items}
+          handleItems={handleItems}
+          sceneData={data[kind]}
+          kind={kind}
+        />
       </div>
       <div className={styles["artwork-wrapper"]}>
         <Artwork
           items={items}
           handleItems={handleItems}
-          artworkData={data[kind]}
+          sceneData={data[kind]}
         />
       </div>
     </section>

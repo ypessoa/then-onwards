@@ -1,11 +1,9 @@
 figure.artwork {
-  // height: 100em;
-  // max-height: calc(100vh - 2em);
   position: relative;
   cursor: crosshair;
-  transition: filter .25s ease;
-  height:0;
-  padding-top:calc(83 / 63 * 100%);
+  transition: filter 0.25s ease;
+  height: 0;
+  padding-top: calc(83 / 63 * 100%);
 
   img {
     pointer-events: none;
@@ -15,7 +13,7 @@ figure.artwork {
     object-position: 0% 0%;
     z-index: 100;
     position: absolute;
-    top:0;
+    top: 0;
   }
 
   .hitbox-wrapper {
@@ -24,8 +22,8 @@ figure.artwork {
     top: 0;
     left: 0;
     z-index: 1000;
-    height:0;
-    padding-top:calc( 83 / 65 * 100%);
+    height: 0;
+    padding-top: calc(83 / 65 * 100%);
 
     .hitbox {
       position: absolute;
