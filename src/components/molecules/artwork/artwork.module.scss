@@ -3,6 +3,7 @@ figure.artwork {
   cursor: crosshair;
   transition: filter 0.25s ease;
   height: 0;
+  user-select:none;
   padding-top: calc(83 / 63 * 100%);
 
   img {
