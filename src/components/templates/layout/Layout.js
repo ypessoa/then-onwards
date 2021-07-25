@@ -5,6 +5,7 @@ import { SceneSection } from "../../organisms/scene-section/SceneSection";
 import { Footer } from "../../organisms/footer/Footer";
 
 export function Layout({ children }) {
+
   return (
     <div className={styles.wrapper}>
       <Header />
