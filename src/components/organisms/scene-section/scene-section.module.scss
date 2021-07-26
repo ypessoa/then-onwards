@@ -1,10 +1,8 @@
 @import "../../../styles/vars.scss";
 
 section.scene {
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: flex-start;
+
 
   &.then {
     background: $black;
@@ -12,7 +10,9 @@ section.scene {
   }
 
   &.onwards {
-    flex-direction: row-reverse;
+   & > div {
+     flex-direction:row-reverse;
+   }
   }
 
   .text-content {

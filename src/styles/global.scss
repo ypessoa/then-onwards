@@ -20,6 +20,18 @@ body {
 
 }
 
+.wrapper {
+  width:100%;
+  max-width: 2000px;
+  margin: 0 auto;
+
+  &.flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
 h1,
 h2 {
   font-family: $sans-serif;
