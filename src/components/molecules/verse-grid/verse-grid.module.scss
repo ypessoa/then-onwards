@@ -1,0 +1,115 @@
+@import "../../../styles/vars.scss";
+
+.verse-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 4em 1em;  
+  height: 100%;
+
+
+  .verse {
+    position: relative;
+    font-size: $small;
+    // display: flex;
+    // align-items: flex-end;
+
+    &.open {
+      p {
+        opacity: 1;
+      }
+      .swatch {
+        filter: grayscale(0);
+      }
+    }
+
+    p {
+      transition: opacity 0.25s ease;
+      pointer-events: none;
+      margin: 0;
+      opacity: 0;    
+    }
+
+    .swatch {
+      position: absolute;
+      top: -2em;
+      // border-radius: 50%;
+      left: 0;
+      width: 1em;
+      height: 1em;
+      transition: transform 0.25s ease, filter 0.25s ease;
+      cursor: pointer;
+      filter: grayscale(100%);
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  &.then {
+    .verse:nth-child(1) {
+      grid-area: 1 / 4 / span 1 / span 2;
+      @media (max-width: $tablet-breakpoint) {
+        grid-area: 2 / 3 / span 1 / span 4;
+      }
+    }
+    .verse:nth-child(2) {
+      grid-area: 1 / 1 / span 1 / span 2;
+      @media (max-width: $tablet-breakpoint) {
+        grid-area: 1 / 1 / span 1 / span 4;
+      }
+    }
+    .verse:nth-child(3) {
+      grid-area: 2 / 3 / span 1 / span 2;
+      @media (max-width: $tablet-breakpoint) {
+        grid-area: 3 / 2 / span 1 / span 4;
+      }
+    }
+    .verse:nth-child(4) {
+      grid-area: 4 / 1 / span 1 / span 2;
+      @media (max-width: $tablet-breakpoint) {
+        grid-area: 4 / 1 / span 1 / span 4;
+      }
+    }
+    .verse:nth-child(5) {
+      grid-area: 5 / 3 / span 1 / span 3;
+    @media (max-width: $tablet-breakpoint) {
+        grid-area: 5 / 2 / span 1 / span 4;
+      }
+    }
+  }
+
+  &.onwards {
+    .verse:nth-child(1) {
+      grid-area: 1 / 4 / span 1 / span 3;
+      @media (max-width: $tablet-breakpoint) {
+        grid-area: 1 / 2 / span 1 / span 4;
+      }
+    }
+    .verse:nth-child(2) {
+      grid-area: 2 / 2 / span 1 / span 3;
+      @media (max-width: $tablet-breakpoint) {
+        grid-area: 2 / 1 / span 1 / span 4;
+      }
+    }
+    .verse:nth-child(3) {
+      grid-area: 3 / 5 / span 1 / span 2;
+      @media (max-width: $tablet-breakpoint) {
+        grid-area: 3 / 3 / span 1 / span 4;
+      }
+    }
+    .verse:nth-child(4) {
+      grid-area: 4 / 1 / span 1 / span 3;
+      @media (max-width: $tablet-breakpoint) {
+        grid-area: 4 / 1 / span 1 / span 4;
+      }
+    }
+    .verse:nth-child(5) {
+      grid-area: 5 / 4 / span 1 / span 3;
+      @media (max-width: $tablet-breakpoint) {
+        grid-area: 5 / 2 / span 1 / span 4;
+      }
+    }
+  }
+}

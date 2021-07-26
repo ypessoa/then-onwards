@@ -1,0 +1,55 @@
+@import "../../../styles/vars.scss";
+
+.info-wrapper {
+  position: relative;
+
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  button.info-button {
+    height: 3em;
+    position: absolute;
+    bottom: .75em;
+    z-index: 100;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    transition: opacity 0.15s ease;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      position: relative;
+      bottom: 0;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .info-dialog {
+    position: absolute;
+    width: 24em;
+    bottom: 6em;
+    transition: opacity 0.25s ease;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      top:0;
+      bottom:0;
+      left: 4em;
+      width: calc(100% - 4em);
+      }
+
+    &.open {
+      opacity: 1;
+    }
+
+    &.closed {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

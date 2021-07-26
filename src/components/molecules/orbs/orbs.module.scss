@@ -1,0 +1,13 @@
+.orbs {
+  position: absolute;
+  top: 0;
+  left: -2em;
+  width: 100%;
+  user-select: none;
+  width: calc(100% + 4em);
+
+  canvas {
+    // height:100%;
+    // background: red;
+  }
+}

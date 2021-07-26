@@ -1,0 +1,65 @@
+@import "../../../styles/vars.scss";
+
+figure.artwork {
+  position: relative;
+  cursor: crosshair;
+  transition: filter 0.25s linear;
+  height: 0;
+  user-select: none;
+  padding-top: calc(83 / 63 * 100%);
+  max-height:100vh;
+
+  figcaption {
+    h2 {
+      font-size: $medium;
+      font-family: $sans-serif;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      margin-left: 2em;
+    }
+  }
+
+  img {
+    pointer-events: none;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    object-position: 0% 0%;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+  }
+
+  .hitbox-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 0;
+    padding-top: calc(83 / 65 * 100%);
+
+    .hitbox {
+      position: absolute;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
+
+  .prop-images {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -10;
+    img.prop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: opacity 0.25s ease;
+    }
+  }
+}

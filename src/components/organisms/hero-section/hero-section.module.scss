@@ -1,0 +1,33 @@
+@import "../../../styles/vars.scss";
+
+section.hero {
+  min-height: calc(100vh - 16em);
+  padding-bottom: 6em;
+  padding-top:12em;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+
+  & > div {
+    height: 100%;
+    align-items: flex-end !important;
+  }
+
+
+
+  .deck {
+    padding-right: 2em;
+    width: calc(50% - 1em);
+    p {
+      font-size: $large;
+      font-family: $sans-serif;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      margin-left: 0;
+      margin-bottom: 2em;
+      width: 100%;
+    }
+  }
+}
