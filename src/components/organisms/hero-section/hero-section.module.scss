@@ -6,6 +6,7 @@ section.hero {
   display: flex;
   align-items: flex-end;
   position: relative;
+  overflow: hidden;
 
   & > div {
     height: 100%;
