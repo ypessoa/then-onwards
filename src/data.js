@@ -1,5 +1,6 @@
 export const data = {
   then: {
+    title: "then",
     description: "interact with the scene.",
     image: "/images/then/then-pre.jpg",
     verses: [
@@ -42,8 +43,8 @@ export const data = {
         swatch: "#7D4771",
         text: (
           <>
-            slurping chocolate milk
-            <br /> through a straw
+            slurping chocolate milk<br />
+            through a straw
           </>
         ),
         item: "tv",
@@ -93,6 +94,7 @@ export const data = {
     ],
   },
   onwards: {
+    title: "onwards",
     description: "interact with the scene.",
     image: "/images/onwards/onwards-pre.jpg",
     verses: [

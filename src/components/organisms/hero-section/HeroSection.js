@@ -4,9 +4,6 @@ export function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className="wrapper flex">
-        <div className={styles.arrow}>
-          <p>↓</p>
-        </div>
         <div className={styles.deck}>
           <p>
             a pair of <br />

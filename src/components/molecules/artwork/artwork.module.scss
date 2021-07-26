@@ -1,10 +1,23 @@
+@import "../../../styles/vars.scss";
+
 figure.artwork {
   position: relative;
   cursor: crosshair;
   transition: filter 0.25s ease;
   height: 0;
-  user-select:none;
+  user-select: none;
   padding-top: calc(83 / 63 * 100%);
+
+  figcaption {
+    h2 {
+      font-size: $medium;
+      font-family: $sans-serif;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      margin-left: 2em;
+    }
+  }
 
   img {
     pointer-events: none;

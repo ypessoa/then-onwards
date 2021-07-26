@@ -68,9 +68,9 @@
       }
     }
     .verse:nth-child(5) {
-      grid-area: 5 / 3 / span 1 / span 2;
-      @media (max-width: $tablet-breakpoint) {
-        grid-area: 5 / 3 / span 1 / span 4;
+      grid-area: 5 / 3 / span 1 / span 3;
+    @media (max-width: $tablet-breakpoint) {
+        grid-area: 5 / 2 / span 1 / span 4;
       }
     }
   }

@@ -1,16 +1,21 @@
 @import "../../../styles/vars.scss";
 
 header.main {
-  position: fixed;
-  // display: flex;
-  // justify-content: space-between;
   padding: 1.5em 2em;
-  width:100%;
+  width: 100%;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    position: relative;
+  }
 
   div {
     flex-basis: calc(50% - 1em);
     flex-grow: 0;
     flex-shrink: 0;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      flex-basis: auto;
+    }
   }
 
   .title {
@@ -18,5 +23,5 @@ header.main {
     //   font-weight: normal;
     // }
   }
-
+  
 }

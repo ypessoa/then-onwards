@@ -36,6 +36,9 @@ export function Artwork({ sceneData, items, handleItems }) {
           </>
         ))}
       </div>
+      <figcaption>
+        <h2>{sceneData.title}</h2>
+      </figcaption>
     </figure>
   );
 }

@@ -17,7 +17,7 @@ export function SceneSection({ kind }) {
 
   return (
     <section className={`${styles.scene} ${styles[kind]}`}>
-      <div className="wrapper flex">
+      <div className="wrapper flex full-height">
         <div className={styles["text-content"]}>
           <VerseGrid
             items={items}

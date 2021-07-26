@@ -1,12 +1,14 @@
 @import "../../../styles/vars.scss";
 
 section.hero {
-  height: calc(100vh - 3em);
+  min-height: calc(100vh - 16em);
   padding-bottom: 6em;
+  display: flex;
+  align-items: flex-end;
 
   & > div {
     height: 100%;
-    align-items: flex-end!important;
+    align-items: flex-end !important;
   }
 
   .arrow,
@@ -23,10 +25,15 @@ section.hero {
   }
 
   .deck {
+    margin-left: calc(50% + 1em);
     padding-right: 2em;
     p {
       font-size: $large;
       font-family: $sans-serif;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      margin-left: 0;
     }
   }
 }

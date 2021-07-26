@@ -3,7 +3,7 @@ import styles from "./header.module.scss";
 export function Header() {
   return (
     <header className={styles.main}>
-      <div className="wrapper flex">
+      <div className="wrapper header-flex">
         <div className={styles.title}>
           <h1>then</h1>
         </div>

@@ -7,7 +7,7 @@ import { Footer } from "../../organisms/footer/Footer";
 export function Layout({ children }) {
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles["layout-wrapper"]}>
       <Header />
       <HeroSection />
       <SceneSection kind="then" />

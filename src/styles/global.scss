@@ -2,11 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono&display=swap");
 @import "./vars.scss";
 
-
-
-html, body {
-  overflow-y:hidden;
-  height:100vh;
+html,
+body {
+  // overflow-y:hidden;
+  // height:100vh;
 }
 
 body {
@@ -18,10 +17,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: $white;
 
+  @media screen and (max-width: $tablet-breakpoint) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $mobile-breakpoint) {
+    font-size: 4vw;
+  }
 }
 
 .wrapper {
-  width:100%;
+  width: 100%;
   max-width: 2000px;
   margin: 0 auto;
 
@@ -29,6 +34,21 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      flex-direction: column-reverse!important;
+    }
+  }
+
+  &.header-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+  }
+
+  &.full-height {
+    // min-height: calc(100vh - 6em);
   }
 }
 
@@ -42,14 +62,17 @@ h1 {
 }
 
 section {
-  padding: 1.5em 2em 4em;
-  min-height: 100vh;
-  scroll-snap-align: start;
-  margin: 0 auto;
+  padding: 1.5em 2em 12em;
+  // min-height: 100vh;
+  // scroll-snap-align: start;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+  padding-bottom: 6em;
+  }
 }
 
 a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
   font-weight: bold;
 }
