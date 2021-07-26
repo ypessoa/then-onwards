@@ -11,6 +11,7 @@ export function Orbs() {
               enable: false,
               zIndex: 2,
             },
+            pauseOnOutsideViewport: true
           },
           particles: {
             shape: {

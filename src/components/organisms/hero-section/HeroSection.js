@@ -7,7 +7,7 @@ export function HeroSection() {
     <section className={styles.hero}>
       <Orbs />
       <div className="wrapper flex">
-      <InfoDialog />
+        <InfoDialog />
         <div className={styles.deck}>
           <p>
             a pair of <br />

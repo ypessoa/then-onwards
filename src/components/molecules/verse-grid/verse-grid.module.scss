@@ -7,9 +7,12 @@
   gap: 4em 1em;  
   height: 100%;
 
+
   .verse {
     position: relative;
     font-size: $small;
+    // display: flex;
+    // align-items: flex-end;
 
     &.open {
       p {
@@ -24,12 +27,13 @@
       transition: opacity 0.25s ease;
       pointer-events: none;
       margin: 0;
-      opacity: 0;
+      opacity: 0;    
     }
 
     .swatch {
       position: absolute;
       top: -2em;
+      // border-radius: 50%;
       left: 0;
       width: 1em;
       height: 1em;

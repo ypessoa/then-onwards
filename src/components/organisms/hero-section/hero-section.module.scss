@@ -3,6 +3,7 @@
 section.hero {
   min-height: calc(100vh - 16em);
   padding-bottom: 6em;
+  padding-top:12em;
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -13,17 +14,11 @@ section.hero {
     align-items: flex-end !important;
   }
 
-  .info,
-  .deck {
-    flex-basis: calc(50% - 1em);
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
 
 
   .deck {
     padding-right: 2em;
-    margin-left: calc(50% + 1em);
+    width: calc(50% - 1em);
     p {
       font-size: $large;
       font-family: $sans-serif;
@@ -31,6 +26,8 @@ section.hero {
 
     @media screen and (max-width: $mobile-breakpoint) {
       margin-left: 0;
+      margin-bottom: 2em;
+      width: 100%;
     }
   }
 }

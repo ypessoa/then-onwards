@@ -16,7 +16,7 @@ export function SceneSection({ kind }) {
   }
 
   return (
-    <section className={`${styles.scene} ${styles[kind]}`}>
+    <section id={`#${kind}`} className={`${styles.scene} ${styles[kind]}`}>
       <div className="wrapper flex full-height">
         <div className={styles["text-content"]}>
           {/* <h2>{kind}</h2> */}
