@@ -3,10 +3,7 @@
 header.main {
   padding: 1.5em 2em;
   width: 100%;
-
-  @media screen and (max-width: $mobile-breakpoint) {
-    position: relative;
-  }
+  position: absolute;
 
   div {
     flex-basis: calc(50% - 1em);
