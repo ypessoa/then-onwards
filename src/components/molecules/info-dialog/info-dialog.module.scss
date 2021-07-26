@@ -1,0 +1,35 @@
+.info-wrapper {
+  position: relative;
+
+  button.info-button {
+    height: 3em;
+    position: absolute;
+    bottom:1.25em;
+    z-index: 100;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    transition: opacity .15s ease;
+
+    &:hover {
+        opacity: .5;
+    }
+  }
+
+  .info-dialog {
+    position: absolute;
+    width: 24em;
+    bottom: 6em;
+    transition: opacity 0.25s ease;
+
+    &.open {
+      opacity: 1;
+    }
+
+    &.closed {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

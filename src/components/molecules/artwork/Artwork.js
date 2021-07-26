@@ -8,7 +8,7 @@ export function Artwork({ sceneData, items, handleItems }) {
       className={styles.artwork}
       style={{ filter: `grayscale(${100 - items.length * 20}%)` }}
     >
-      <img src={sceneData.image} alt="description" />
+      <img src={sceneData.image} alt={sceneData.description} />
       <div className={styles["hitbox-wrapper"]}>
         {sceneData.areas.map((area, i) => (
           <>
