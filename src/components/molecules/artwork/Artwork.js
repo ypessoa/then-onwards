@@ -22,6 +22,8 @@ export function Artwork({ sceneData, items, handleItems }) {
                 height: `calc(100% * (${area.height} / 1660))`,
               }}
               onClick={() => handleItems(area.name)}
+              role="button"
+              aria-label="toggle the appearance of objects in the scene"
             />
             <div className={styles["prop-images"]} key={`${i}b`}>
               <img

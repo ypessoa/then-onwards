@@ -30,10 +30,11 @@
       opacity: 0;    
     }
 
-    .swatch {
+    button.swatch {
       position: absolute;
       top: -2em;
-      // border-radius: 50%;
+      border-radius: 0;
+      border: none;
       left: 0;
       width: 1em;
       height: 1em;

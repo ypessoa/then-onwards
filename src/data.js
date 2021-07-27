@@ -1,7 +1,8 @@
 export const data = {
   then: {
     title: "then",
-    description: "interact with the scene.",
+    description:
+      "A digital 3d-rendered scene of a living room at dawn. A television atop a TV stand displays static color bars. To its left, a candle is lit, and to its right lies a tulip in a vase. Above, there is a glowing neon sign on the wall, in the shape of a smiley face. There's also a coffee table, with a Rubik's cube, a Gameboy, an ashtray, a candle, a cup of tea, and an incense holder on top of it. Beneath it is a shaggy rug, with CDs on the floor beside it. An open window casts sunlight upon the room. ",
     image: "/images/then/then-pre.jpg",
     verses: [
       {
@@ -43,7 +44,8 @@ export const data = {
         swatch: "#7D4771",
         text: (
           <>
-            slurping chocolate milk<br />
+            slurping chocolate milk
+            <br />
             through a straw
           </>
         ),
@@ -95,7 +97,7 @@ export const data = {
   },
   onwards: {
     title: "onwards",
-    description: "interact with the scene.",
+    description: "A digital 3d-rendered scene of a bus stop along the edge of a road, right before sunset at the end of the day. In the background is an open field, with white cherry blossoms and a white rabbit. To the left of the bus stop is a round sign with a question mark on it. To its left, a pigeon sits on the ground under a utility pole. On the side of the bus stop is a route map. Under the bench in the bus stop lies a coffee cup, and above it an LED sign that reads `Tomorrow`. ",
     image: "/images/onwards/onwards-pre.jpg",
     verses: [
       {

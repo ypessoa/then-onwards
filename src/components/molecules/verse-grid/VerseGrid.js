@@ -10,10 +10,11 @@ export function VerseGrid({ sceneData, items, handleItems, kind }) {
           }`}
           key={i}
         >
-          <div
+          <button
             className={styles.swatch}
             style={{ backgroundColor: verse.swatch }}
             onClick={() => handleItems(verse.item)}
+            aria-label={`toggle ${verse.item}'s appearance in the artwork`}
           />
           <p>{verse.text}</p>
         </div>

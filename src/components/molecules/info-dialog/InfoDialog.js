@@ -9,6 +9,7 @@ export function InfoDialog() {
     <div className={styles["info-wrapper"]}>
       <button
         className={styles["info-button"]}
+        aria-label="toggle information dialog"
         onClick={() => toggleInfo(!showInfo)}
       >
         <InfoIcon />
@@ -18,7 +19,7 @@ export function InfoDialog() {
           showInfo ? styles.open : styles.closed
         }`}
       >
-        some of the objects in the images below are special. find and click on
+        some of the objects in the images below are dynamic. find and click on
         them to transform the scenes.
       </div>
     </div>
