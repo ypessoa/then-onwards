@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 function App() {
   return (
     <Layout>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang : "en" }}>
         <meta charset="UTF-8" />
         <title>then + onwards</title>
         <link rel="icon" href="images/favicon/favicon-32.png" />
