@@ -25,7 +25,7 @@ export function Orbs() {
               },
             },
             number: {
-              value: 20,
+              value: 15,
               density: {
                 enable: true,
                 area: 500,
